@@ -1,0 +1,72 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# yang7er
+
+<!-- badges: start -->
+
+<!-- badges: end -->
+
+The goal of yang7er is to calculating the difference between state and regional hpi, as well as graphing the change in state hpi, and the change in regional hpi.
+
+## Installation
+
+You can install the development version of yang7er from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("etc5523-2022/rpkg-yang7er")
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(yang7er)
+## basic example code
+```
+
+### 1.get_hpi
+
+If you want to check the build-in data, you can use:
+
+```{r}
+get_hpi()
+```
+
+### 2.diff_region_state
+
+If you want to get the information of `Ak`, in `2006`, you can use:
+
+```{r}
+diff_region_state("AK",2016)
+```
+
+### 3.diff_plot
+
+If you want to plot the `AK's` hpi change, and compare with its region's change, you can use:
+
+```{r plot1, fig.cap="The change of HPI in Ak, Pacific West Area",fig.width=5.5,fig.height=4}
+diff_plot("AK")
+```
+
+### 4.regions_plot
+
+If you want to plot regions' hpi change from `1990` to `2018`, you can use:
+
+```{r plot2, fig.cap="The change of HPI in all regions from 1990 to 2018",fig.width=5.5,fig.height=4}
+regions_plot(1990,2018)
+```
