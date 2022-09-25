@@ -13,7 +13,7 @@ LazyData: true
 RoxygenNote: 7.2.1
 Depends: 
     R (>= 2.10)
-URL: https://github.com/etc5523-2022/rpkg-yang7er
+URL: https://etc5523-2022.github.io/rpkg-yang7er/
 BugReports: https://github.com/etc5523-2022/rpkg-yang7er/issues
 Imports: 
     dplyr,
